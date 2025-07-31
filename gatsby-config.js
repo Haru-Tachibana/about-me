@@ -1,5 +1,4 @@
 import "./src/styles/global.css"
-import React from 'react';
 module.exports = {
   siteMetadata: {
     title: "My First Gatsby Site",
