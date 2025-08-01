@@ -50,3 +50,7 @@
     padding: 0 1rem;
   }
 }
+
+main {
+  padding-top: 68px; /* NavBar高度(1rem+padding)的合适值 */
+}

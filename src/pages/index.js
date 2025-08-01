@@ -13,16 +13,17 @@ const IndexPage = () => {
         <SubHeading>Currently doing MSc Software Engineering at NTU.</SubHeading>
         <SubHeading>A data science enthusiast, bassist, anime fan, and dog lover...here is my pup Kemi, she's a happy girl and loves to play :3</SubHeading>
         <figure>
-          <StaticImage
-            src="../images/kemi1.jpg"
-          />
+          <StaticImage src="../images/kemi1.jpg" />
         </figure>
-
       </HeroSection>
-    </Layout >
+    </Layout>
   )
 }
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => (
+  <>
+    <link rel="icon" href="/favicon.ico" />
+  </>
+)
 
 export default IndexPage
