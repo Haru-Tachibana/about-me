@@ -1,4 +1,4 @@
-import "./src/styles/global.css"
+
 module.exports = {
   siteMetadata: {
     title: "My First Gatsby Site",
