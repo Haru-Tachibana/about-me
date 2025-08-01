@@ -7,7 +7,7 @@ import { HeroSection, BigHeading, AccentText, SubHeading } from '../components/s
 const AboutPage = () => {
   return (
     <Layout pageTitle="Projects">
-      <AccentText>What I have develped...</AccentText>
+      <AccentText>What I have developed...</AccentText>
     
     </Layout>
   )

@@ -16,68 +16,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #0a192f;   /* dark navy background */
-    color: #ccd6f6;              /* soft light text */
+    background-color: #0a192f;
+    color: #ccd6f6;
     font-family: 'Inter', sans-serif;
     line-height: 1.7;
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem;
+    padding: 2rem;  /* remove max-width and margin:auto */
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    color: #64ffda;              /* teal accent */
-    margin-bottom: 1rem;
-    font-weight: 600;
-  }
-
-  p {
-    margin-bottom: 1.25rem;
-    font-size: 1rem;
-    color: #8892b0;              /* muted text color */
-  }
-
-  a {
-    color: #64ffda;              /* teal accent */
-    text-decoration: none;
-    position: relative;
-    transition: all 0.3s ease;
-  }
-
-  a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 1px;
-    background: #64ffda;
-    transition: width 0.3s;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-
-  a:hover::after {
-    width: 100%;
-  }
-
-  code {
-    font-family: 'Fira Mono', monospace;
-    background: rgba(100, 255, 218, 0.1);
-    color: #64ffda;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-size: 0.9rem;
-  }
-
-  ul, ol {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  button {
-    font-family: inherit;
-    cursor: pointer;
-  }
+  /* rest of your styles... */
 `;
 
 export default GlobalStyle;

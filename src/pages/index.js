@@ -6,9 +6,9 @@ import { HeroSection, BigHeading, AccentText, SubHeading } from '../components/s
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="About Me">
+    <Layout pageTitle="">
       <HeroSection>
-        <AccentText>Welcome to My Page</AccentText>
+        <AccentText>Welcome!</AccentText>
         <BigHeading>Hi. I'm Yuyang Wang.</BigHeading>
         <SubHeading>Currently doing MSc Software Engineering at NTU.</SubHeading>
         <SubHeading>A data science enthusiast, bassist, anime fan, and dog lover...here is my pup Kemi, she's a happy girl and loves to play :3</SubHeading>
@@ -18,17 +18,6 @@ const IndexPage = () => {
           />
         </figure>
 
-        <div style={{ marginTop: '20px', fontSize: '2rem', display: 'flex', gap: '15px', justifyContent: 'center' }}>
-          <a href="https://github.com/Haru-Tachibana" className="iconLink" target="_blank" rel="noopener noreferrer">
-            <FaGithub />
-          </a>
-          <a href="https://www.linkedin.com/in/yuyang-wang-b76859290/" className="iconLink" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
-          </a>
-          <a href="https://www.instagram.com/paloma_yang_w/" className="iconLink" target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
-          </a>
-        </div>
       </HeroSection>
     </Layout >
   )

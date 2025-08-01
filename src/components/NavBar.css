@@ -1,29 +1,20 @@
 .nav {
+  width: 100%;
   display: flex;
+  justify-content: flex-end;   /* move links to right */
   gap: 20px;
-  background-color: #1a1a2e; /* dark navy background */
-  padding: 1rem 2rem;        /* space inside navbar */
-  position: relative; 
-  margin-bottom: 2rem;       /* remove absolute to keep navbar at top */
+  background-color: #0a192f;  /* dark background */
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #233554;
 }
 
 .nav a {
-  color: #14B8A6; /* teal */
+  color: #ccd6f6;
   text-decoration: none;
   font-family: 'Fira Mono', monospace;
+  font-size: 0.95rem;
 }
 
 .nav a:hover {
-  color: #3B82F6; /* blue */
-}
-
-
-.nav a {
-  color: #14B8A6; /* teal */
-  text-decoration: none;
-  font-family: 'Fira Mono', monospace;
-}
-
-.nav a:hover {
-  color: #3B82F6; /* blue */
+  color: #64ffda;
 }
