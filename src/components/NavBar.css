@@ -1,10 +1,22 @@
 .nav {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   display: flex;
-  gap: 15px;
+  gap: 20px;
+  background-color: #1a1a2e; /* dark navy background */
+  padding: 1rem 2rem;        /* space inside navbar */
+  position: relative; 
+  margin-bottom: 2rem;       /* remove absolute to keep navbar at top */
 }
+
+.nav a {
+  color: #14B8A6; /* teal */
+  text-decoration: none;
+  font-family: 'Fira Mono', monospace;
+}
+
+.nav a:hover {
+  color: #3B82F6; /* blue */
+}
+
 
 .nav a {
   color: #14B8A6; /* teal */

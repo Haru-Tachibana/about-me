@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import './NavBar.css'  // we'll create this CSS next
+import './NavBar.css'
 
 const NavBar = () => {
   return (
