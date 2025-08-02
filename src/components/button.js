@@ -3,26 +3,29 @@ import styled from 'styled-components';
 const StyledButton = styled.button`
   position: relative;
   background: transparent;
-  color: #64ffda;
-  border: 1px solid #64ffda;
+  color: var(--dark-olive); 
+  border: 1px solid var(--dark-olive);
   border-radius: 4px;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  transition: background 0.3s ease;
-  overflow: visible; /* just to be sure */
+  font-family: 'Fira Mono', monospace;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  overflow: visible;
 
   &:hover {
-    background: rgba(100, 255, 218, 0.1);
+    background: rgba(108, 88, 76, 0.1); /* semi-transparent dark-olive */
+    color: var(--coffee);
   }
 
   &::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0px;   /* place it exactly at the bottom */
+    bottom: 0px;
     height: 2px;
     width: 0;
-    background-color: #64ffda;
+    background-color: var(--coffee);
     transition: width 0.3s ease;
   }
 
@@ -30,3 +33,5 @@ const StyledButton = styled.button`
     width: 100%;
   }
 `;
+
+export default StyledButton;

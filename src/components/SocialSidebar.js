@@ -1,7 +1,6 @@
-// src/components/SocialSidebar.js
 import React from 'react';
 import styled from 'styled-components';
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';  // ✅ added FaInstagram
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Sidebar = styled.div`
   position: fixed;
@@ -10,20 +9,20 @@ const Sidebar = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 
   @media (max-width: 768px) {
-    display: none;  // hide on small screens
+    display: none;  /* hide on small screens */
   }
 `;
 
 const IconLink = styled.a`
-  color: #8892b0;
-  font-size: 1.5rem;
+  color: #6c584c;       
+  font-size: 2rem;       
   transition: color 0.3s ease;
 
   &:hover {
-    color: #64ffda;
+    color: #a98467;     
   }
 `;
 

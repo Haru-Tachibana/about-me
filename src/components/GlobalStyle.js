@@ -4,6 +4,14 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Inter:wght@400;500;600;700&display=swap');
 
+  :root {
+    --linen: #F0EAD2;
+    --sage: #DDE5B6;
+    --moss: #ADC178;
+    --coffee: #A98467;
+    --dark-olive: #6C584C;
+  }
+
   *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -16,14 +24,16 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #0a192f;
-    color: #ccd6f6;
-    font-family: 'Inter', sans-serif;
+    background-color: var(--linen);  /* main background */
+    color: #A98467;            /* default text color */
+    font-family: fira-mono;
     line-height: 1.7;
-    padding: 2rem;  /* remove max-width and margin:auto */
+    padding: 2rem;
   }
 
-  /* rest of your styles... */
+  main {
+    padding-top: 80px;
+  }
 `;
 
 export default GlobalStyle;
