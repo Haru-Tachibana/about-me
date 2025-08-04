@@ -22,7 +22,7 @@ export const AccentText = styled.span`
 export const SubHeading = styled.h2`
   font-size: 1.25rem;
   color: var(--coffee);
-  max-width: 600px;
+  max-width: 90%;
   line-height: 1.5;
 `;
 

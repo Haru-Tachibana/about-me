@@ -7,9 +7,9 @@ import NavBar from './NavBar';
 import SocialSidebar from './SocialSidebar';
 
 const Container = styled.div`
-  max-width: min(90%, 1200px);
+  max-width: min(95%);  /* changed from 90% and 1200px */
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 
   @media (max-width: 768px) {
     padding: 0 1rem;
@@ -17,7 +17,7 @@ const Container = styled.div`
 `;
 
 const Heading = styled.h1`
-  text-align: right;
+  text-align: left;
   color: var(--dark-olive);   /* updated to new palette */
   font-size: 2rem;
   font-weight: 600;

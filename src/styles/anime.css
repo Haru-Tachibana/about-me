@@ -1,4 +1,6 @@
 /* src/styles/anime.css */
+
+
 .anime-page {
   display: flex;
   gap: 20px;
@@ -6,7 +8,7 @@
 
 .sidebar {
   width: 200px;
-  background-color: #f08b32;
+  background-color: #DDE5B6;
   padding: 15px;
   border-radius: 8px;
   text-align: left;
@@ -16,11 +18,11 @@
   margin-bottom: 10px;
   cursor: pointer;
   font-weight: 500;
-  color: #7f3606;
+  color: #6C584C;
 }
 
 .category-link.active {
-  color: #91d0e6;
+  color: #ADC178;
   font-weight: bold;
 }
 
@@ -31,7 +33,7 @@
 }
 
 .counter {
-  color: #666;
+  color: #ADC178;
   margin-bottom: 5px;
 }
 
@@ -43,7 +45,7 @@
 
 .anime-description {
   font-size: 16px;
-  color: #8892b0;
+  color: #A98467;
   margin-bottom: 16px;
 }
 
@@ -57,7 +59,8 @@
   max-width: 640px;
   margin: 0 auto 20px;
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 56.25%;
+  /* 16:9 ratio */
   height: 0;
 }
 
@@ -73,18 +76,18 @@
 .button-group {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 50px;
 }
 
 .button-group button {
   padding: 8px 16px;
   border: none;
-  background-color: #eeeeee93;
+  background-color: #ADC178;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 500;
 }
 
 .button-group button:hover {
-  background-color: #ffffff93;
+  background-color: #ADC178;
 }

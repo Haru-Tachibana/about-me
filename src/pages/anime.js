@@ -68,7 +68,7 @@ export default function AnimePage() {
   }
 
   return (
-    <Layout pageTitle="My Favorite Anime">
+    <Layout pageTitle="My Favourite Anime">
       <div className="anime-page">
         {/* Sidebar */}
         <div className="sidebar">
@@ -85,7 +85,6 @@ export default function AnimePage() {
 
         {/* Main content */}
         <div className="main-content">
-          <h3 className="category-title">{categories.find(c => c.key === selectedCategory)?.name}</h3>
           <p className="counter">{`${currentIndex + 1} / ${animeList.length}`}</p>
           <h2 className="anime-title">{currentAnime.title}</h2>
           <p className="anime-description">{currentAnime.description}</p>
