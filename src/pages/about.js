@@ -22,13 +22,13 @@ const IndexPage = () => {
           <BodyText>Although I seem more like an INTP or an INTJ (especially when I'm alone or concentrating), based on the Jungian Eight-Part Test, I'm certain that I am an ENTJ. In fact, I can present any xNTx state...</BodyText>
         </SubHeading>
         <SubHeading>
-          My Interests: Bass guitar, anime & manga, painting, crafting.
+          My Interests: Bass guitar, anime & manga (check Anime page for more info), painting, crafting.
           <BodyText>I love building models, especially Kotobukiya Megami Device series. </BodyText>
           <BodyText>As for sports, I usually don't like to excercise but I do enjoy badminton, swimming and climbing (fun fact I'm pretty good at badminton).</BodyText>
         </SubHeading>
         <SubHeading>
           More about Music: I play bass guitar in bands.
-          <BodyText>I've been playing bass guitar for 5 years and I love performing rock music. Currently I'm using Sire Marcus Miller V7 2nd Gen 5-String Burgundy Electric Bass Guitar, and it's my favourite model (love the glittering shiny pinky finish). </BodyText>
+          <BodyText>I've been playing bass guitar for 5 years and I love performing rock music. Currently I'm using Sire Marcus Miller V7 2nd Gen 5-String Burgundy Electric Bass Guitar, and it's my favourite model (love the glittering shiny pinky finish). Check Music page for more details about my music taste.</BodyText>
         </SubHeading>
         <SubHeading>
           Games I Play: I play games on Macbook, mobile devices and Nintendo Switch.
@@ -42,11 +42,9 @@ const IndexPage = () => {
             On iPad: Ensemble Stars!, Arknights.
           </BodyText>
         </SubHeading>
-        <img src="/images/gifs/ryo-shy.gif" alt="Ryo shy"
+        <img src="/images/gifs/ryo-rambling.gif" alt="Ryo rambling"
           style={{ maxWidth: '100%', height: 'auto' }}
         />
-        {/* Optional: add a button */}
-        {/* <StyledButton>See My Projects</StyledButton> */}
       </HeroSection>
     </Layout>
   );
