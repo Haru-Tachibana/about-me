@@ -55,3 +55,13 @@ export const Footer = styled.footer`
   font-size: 0.85rem;
   color: var(--coffee);
 `;
+
+export const StyledLink = styled.a`
+  color: var(--moss);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: var(--coffee);
+  }
+`;
