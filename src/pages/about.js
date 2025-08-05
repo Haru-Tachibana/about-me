@@ -13,7 +13,7 @@ const IndexPage = () => {
           <BodyText>*I use Haru Tachibana (橘 羽流) as well, if you have checked my GitHub profile you'll be familiar with this name. I use Haru as my online name.</BodyText>
         </SubHeading>
         <SubHeading>
-          My Origin:  I am a bisexual female bron and raised in Hangzhou, China.
+          My Origin:  I am bron and raised in Hangzhou, China.
           <BodyText>My hometwon is the capital of Zhejiang Province located in southeast China. It's a famous tourist destination and known for technological innovation. It's the hosts the headquarters of Alibaba Group, Ant Group, DeepSeek, Geely, and NetEase. </BodyText>
           <BodyText>I speak 3 languages, Madarin Chinese, English and Japanese.</BodyText>
         </SubHeading>
