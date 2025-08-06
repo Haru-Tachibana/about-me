@@ -2,7 +2,7 @@ import * as React from 'react';
 import Layout from '../components/layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import { HeroSection, BigHeading, AccentText, SubHeading, BodyText } from '../components/styled';
-import StyledButton from '../components/StyledButton'; // if you want to add a button
+import StyledButton from '../components/StyledButton';
 
 const IndexPage = () => {
   return (
@@ -15,8 +15,7 @@ const IndexPage = () => {
         <img src="/images/gifs/ryo-shy.gif" alt="Ryo shy"
           style={{ maxWidth: '100%', height: 'auto' }}
         />
-        {/* Optional: add a button */}
-        {/* <StyledButton>See My Projects</StyledButton> */}
+
       </HeroSection>
     </Layout>
   );

@@ -39,7 +39,6 @@ const sampleAnimeData = {
       youtubeId: 'K2uEPO9FcSg'
     }
   ]
-  // add more...
 }
 
 export default function AnimePage() {

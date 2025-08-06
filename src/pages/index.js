@@ -2,7 +2,18 @@ import * as React from 'react';
 import Layout from '../components/layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import { HeroSection, BigHeading, AccentText, SubHeading, BodyText } from '../components/styled';
-import StyledButton from '../components/StyledButton'; // if you want to add a button
+import StyledButton from '../components/StyledButton';
+import Gallery from '../components/Gallery';
+import ImageCarousel from '../components/ImageCarousel';
+
+const imagePathsKemi = [
+  '/images/kemi1.jpg',
+  '/images/kemi2.jpg',
+  '/images/kemi3.jpg',
+  '/images/kemi4.jpg',
+  '/images/kemi5.jpg',
+  '/images/kemi6.jpg',
+];
 
 const IndexPage = () => {
   return (
@@ -17,15 +28,15 @@ const IndexPage = () => {
         <BodyText>
           This is my personal website. Feel free to explore my experiences and interests (maybe some fun facts as well).
         </BodyText>
-        <figure style={{ maxWidth: '400px', margin: '1rem auto' }}>
-          <StaticImage 
-            src="../images/kemi1.jpg" 
-            alt="Photo of Kemi, my dog" 
-            style={{ borderRadius: '8px' }}
-          />
-        </figure>
-        {/* Optional: add a button */}
-        {/* <StyledButton>See My Projects</StyledButton> */}
+        <SubHeading>
+          *Click on the images below to see more funny pics~ <br />
+        </SubHeading>
+        <BodyText>
+          left side -> previous image <br />
+          right side -> next image
+        </BodyText>
+        <ImageCarousel images={imagePathsKemi} />
+
       </HeroSection>
     </Layout>
   );
