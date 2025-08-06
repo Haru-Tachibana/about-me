@@ -9,7 +9,8 @@ import {
   BodyText,
   TableOfContents,
   TOCList,
-  TOCItem
+  TOCItem,
+  StyledLink
 } from '../components/styled';
 
 const ArtistCard = styled.div`
@@ -56,27 +57,57 @@ const Music = () => {
         <div id="rock">
           <GenreTitleBar>Rock</GenreTitleBar>
           <BodyText>
-            Rock is my number one favorite genre — I love energetic performances, deep lyrics, and dynamic instrumentals.
+            Rock is my NO.1 favourite genre — I love energetic performances, deep lyrics, and dynamic instrumentals. <br />
+            While rebellion against authority and societal norms has been a prominent theme throughout the history of rock n roll, particularly during its genesis and peak periods of influence, it's also a powerful medium for exploring a broader range of human experiences, from self-expression to emotional storytelling. 
           </BodyText>
 
           <ArtistCard>
-            <ArtistName>ONE OK ROCK</ArtistName>
-            <IntroText>Japanese rock band with powerful vocals and emotional lyrics.</IntroText>
+            <ArtistName>
+              <StyledLink href='https://www.oneokrock.com/en/'>ONE OK ROCK</StyledLink>
+            </ArtistName>
+            <IntroText>Japanese rock band with powerful vocals and emotional lyrics. <br />
+            OOR has been a significant influence on my musical journey, inspiring me with their passion and energy.<br />
+            Their music resonates deeply with me, especially their ability to blend different genres and convey raw emotions.<br />
+            OOR has been critisized for their "westernisation" and "selling out," but I believe they have successfully created a unique sound that transcends cultural boundaries.<br />
+            When "DETOX" came out in 2025, apparently OOR is going to make more music similar to their older stuff. Hooray! <br />
+            Yeah that's right. Get all those screams and grit back!!
+            </IntroText>
             <MusicGallery
               albums={[
                 {
-                  cover: '/albums/oneokrock_ambitions.jpg',
-                  title: 'Ambitions',
-                  audioSrc: '/audio/oneokrock_ambitions.mp3',
+                  cover: '/albums/JinseiBoku.jpg',
+                  title: 'The Beginning',
+                  youtubeEmbed: 'https://www.youtube.com/embed/Hh9yZWeTmVM',
                 },
                 {
-                  cover: '/albums/oneokrock_eyeofthestorm.jpg',
-                  title: 'Eye of the Storm',
-                  audioSrc: '/audio/oneokrock_eyeofthestorm.mp3',
+                  cover: '/albums/DETOX (Japanese Version).jpg',
+                  title: 'C.U.R.I.O.S.I.T.Y. feat. Paledusk and CHICO CARLITO',
+                  youtubeEmbed: 'https://www.youtube.com/embed/EPlFuHhE05g',
+                },
+                {
+                  cover: '/albums/Ambitions.jpg',
+                  title: 'I Was King',
+                  youtubeEmbed: 'https://www.youtube.com/embed/M0V46khLWnk',
+                },
+                {
+                  cover: '/albums/35xxxv.jpg',
+                  title: 'One by One',
+                  youtubeEmbed: 'https://www.youtube.com/embed/R1kCHYQBEa4?si=hjePSLYx7glSW6Ym',
+                },
+                {
+                  cover: '/albums/Eye of the Storm.jpg',
+                  title: 'Stand Out Fit In',
+                  youtubeEmbed: 'https://www.youtube.com/embed/IGInsosP0Ac?si=lZonJ9aDk5XywxH0',
+                },
+                {
+                  cover: '/albums/Zeitakubyō.jpg',
+                  title: '欲望に満ちた青年団',
+                  youtubeEmbed: 'https://www.youtube.com/embed/tVNPatb4M_A',
                 },
               ]}
             />
           </ArtistCard>
+
 
           <ArtistCard>
             <ArtistName>Måneskin</ArtistName>
