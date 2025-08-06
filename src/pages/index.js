@@ -2,7 +2,7 @@ import * as React from 'react';
 import Layout from '../components/layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import { HeroSection, BigHeading, AccentText, SubHeading, BodyText, StyledLink } from '../components/styled';
-import StyledButton from '../components/StyledButton';
+import StyledButton from '../components/button';
 import Gallery from '../components/Gallery';
 import ImageCarousel from '../components/ImageCarousel';
 
