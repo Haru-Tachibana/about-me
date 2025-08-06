@@ -58,7 +58,7 @@ const Music = () => {
           <GenreTitleBar>Rock</GenreTitleBar>
           <BodyText>
             Rock is my NO.1 favourite genre — I love energetic performances, deep lyrics, and dynamic instrumentals. <br />
-            While rebellion against authority and societal norms has been a prominent theme throughout the history of rock n roll, particularly during its genesis and peak periods of influence, it's also a powerful medium for exploring a broader range of human experiences, from self-expression to emotional storytelling. 
+            While rebellion against authority and societal norms has been a prominent theme throughout the history of rock n roll, particularly during its genesis and peak periods of influence, it's also a powerful medium for exploring a broader range of human experiences, from self-expression to emotional storytelling.
           </BodyText>
 
           <ArtistCard>
@@ -66,11 +66,11 @@ const Music = () => {
               <StyledLink href='https://www.oneokrock.com/en/'>ONE OK ROCK</StyledLink>
             </ArtistName>
             <IntroText>Japanese rock band with powerful vocals and emotional lyrics. <br />
-            OOR has been a significant influence on my musical journey, inspiring me with their passion and energy.<br />
-            Their music resonates deeply with me, especially their ability to blend different genres and convey raw emotions.<br />
-            OOR has been critisized for their "westernisation" and "selling out," but I believe they have successfully created a unique sound that transcends cultural boundaries.<br />
-            When "DETOX" came out in 2025, apparently OOR is going to make more music similar to their older stuff. Hooray! <br />
-            Yeah that's right. Get all those screams and grit back!!
+              OOR has been a significant influence on my musical journey, inspiring me with their passion and energy.<br />
+              Their music resonates deeply with me, especially their ability to blend different genres and convey raw emotions.<br />
+              OOR has been critisized for their "westernisation" and "selling out," but I believe they have successfully created a unique sound that transcends cultural boundaries.<br />
+              When "DETOX" came out in 2025 (check the full album out <StyledLink href='https://www.youtube.com/playlist?list=PLxA687tYuMWgnC3A2gApxJFq41kRt5ypX'>here</StyledLink>), apparently OOR is going to make more music similar to their older stuff. Hooray! <br />
+              Yeah that's right. Get all those screams and grit back!!
             </IntroText>
             <MusicGallery
               albums={[
@@ -110,29 +110,73 @@ const Music = () => {
 
 
           <ArtistCard>
-            <ArtistName>Måneskin</ArtistName>
-            <IntroText>Italian rock band known for their raw energy and charismatic style.</IntroText>
+            <ArtistName>
+              <StyledLink href='https://en.wikipedia.org/wiki/M%C3%A5neskin'>Måneskin</StyledLink>
+            </ArtistName>
+            <IntroText>Italian rock band known for their raw energy and charismatic style.
+              <br />
+              Måneskin has been a breath of fresh air in the rock scene, bringing back the
+              glam rock vibes with a modern twist. Their music is infectious, and their performances are electrifying. <br />
+              Also <StyledLink href='https://www.instagram.com/vicdeangelis/?hl=en'>Victoria De Angelis</StyledLink>, the bassist attracts me a lot with her unique style and stage presence. <br />
+              Agree or not, Vic is hot.
+            </IntroText>
             <MusicGallery
               albums={[
                 {
-                  cover: '/albums/maneskin_teatrodira.jpg',
-                  title: 'Teatro d’ira',
-                  audioSrc: '/audio/maneskin_teatrodira.mp3',
+                  cover: '/albums/SUPERMODEL - Single.jpg',
+                  title: 'SUPERMODEL',
+                  youtubeEmbed: 'https://www.youtube.com/embed/jODrVofka54',
                 },
-                // Add more albums if you want
+                {
+                  cover: '/albums/Teatro.jpg',
+                  title: 'I WANNA BE YOUR SLAVE',
+                  youtubeEmbed: 'https://www.youtube.com/embed/yOb9Xaug35M',
+                },
+                {
+                  cover: '/albums/RUSH! (ARE U COMING_).jpg',
+                  title: 'GOSSIP (feat. Tom Morello)',
+                  youtubeEmbed: 'https://www.youtube.com/embed/XrsbfrFPATs',
+                },
+                {
+                  cover: '/albums/Il ballo della vita.jpg',
+                  title: "L'altra dimensione",
+                  youtubeEmbed: 'https://www.youtube.com/embed/tTKuYa0MxsY',
+                },
               ]}
             />
           </ArtistCard>
 
           <ArtistCard>
-            <ArtistName>Muse</ArtistName>
-            <IntroText>Legendary British rock band with epic soundscapes and orchestral elements.</IntroText>
+            <ArtistName>
+              <StyledLink href='https://linkinpark.com/'>Linkin Park</StyledLink>
+            </ArtistName>
+            <IntroText>
+              Their fusion of rock, metal, and electronic elements created a sound that resonated deeply with me. <br />
+              The emotional depth of their lyrics and the raw energy of their music have left a lasting impact on my life. <br />
+              "Sometimes the saddest people seem the happiest once they've made that decision"...is what I wanted to say about Chester Bennington. <br />
+              His life story is a lagacy.
+            </IntroText>
             <MusicGallery
               albums={[
                 {
-                  cover: '/albums/muse_drones.jpg',
-                  title: 'Drones',
-                  audioSrc: '/audio/muse_drones.mp3',
+                  cover: '/albums/From Zero (Deluxe Edition).jpg',
+                  title: "The Emptiness Machine",
+                  youtubeEmbed: 'https://www.youtube.com/embed/SRXH9AbT280',
+                },
+                {
+                  cover: '/albums/Meteora (20th Anniversary Edition).jpg',
+                  title: 'Lost',
+                  youtubeEmbed: 'https://www.youtube.com/embed/7NK_JOkuSVY',
+                },
+                {
+                  cover: '/albums/numb.png',
+                  title: 'Numb',
+                  youtubeEmbed: 'https://www.youtube.com/embed/kXYiU_JCYtU',
+                },
+                {
+                  cover: '/albums/Papercut.png',
+                  title: 'Papercut',
+                  youtubeEmbed: 'https://www.youtube.com/embed/vjVkXlxsO8Q',
                 },
               ]}
             />
@@ -143,32 +187,103 @@ const Music = () => {
 
       <HeroSection>
         <div id="jpop">
-          <GenreTitleBar>J-POP</GenreTitleBar>
-          <BodyText>J-POP offers vibrant and catchy tunes with beautiful melodies and emotional depth.</BodyText>
+          <GenreTitleBar>J-Pop | J-Rock</GenreTitleBar>
+          <BodyText>J-Pop/J-Rock offers vibrant and catchy tunes with beautiful melodies and emotional depth.<br />
+            I love how diverse and innovative J-POP can be, blending traditional sounds with modern influences.
+          </BodyText>
 
           <ArtistCard>
-            <ArtistName>Yorushika</ArtistName>
-            <IntroText>Thoughtful and poetic songwriting.</IntroText>
+            <ArtistName>
+              <StyledLink href='https://yorushika.com/?lang=en'>Yorushika</StyledLink>
+            </ArtistName>
+            <IntroText>Thoughtful and poetic songwriting.
+              <br />
+              Yorushika's music often explores themes of love, loss, and the passage of time, resonating deeply with listeners. <br />
+              Their unique sound, blending rock and pop elements, creates an emotional and immersive experience.<br />
+              They always drop beautiful and qality songs (thanks n-buna and suis) and I LOVE THEIR GUIRAR SOLOS. <br />
+              <StyledLink href='https://www.youtube.com/watch?v=lJ1UuhLqY5E&list=RDlJ1UuhLqY5E&start_radio=1&rv=lJ1UuhLqY5E'>Plagiarism</StyledLink> and <StyledLink href='https://www.youtube.com/watch?v=4MoRLTAJY_0&list=PLUQKJP1sVuNOEqkssSr7KokY_mS2beyEs'>That's Why I Gave Up on Music</StyledLink> are my favourite albums. <br />
+              <StyledLink href='https://www.youtube.com/channel/UCRbsmnDTHD9-4pEIuG7zYRw'>rachie 🎀💌</StyledLink> has amazing English cover for lots of Yorushika songs, please check <StyledLink href='https://www.youtube.com/watch?v=sAAfVjUwVc4'>Thought Crime</StyledLink>, I absolutely LOVE the lyrics.
+            </IntroText>
             <MusicGallery
               albums={[
                 {
-                  cover: '/albums/yorushika_elma.jpg',
-                  title: 'Elma',
-                  audioSrc: '/audio/yorushika_elma.mp3',
+                  cover: '/albums/だから僕は音楽を辞めた.jpg',
+                  title: "That's Why I Gave Up on Music",
+                  youtubeEmbed: 'https://www.youtube.com/embed/KTZ-y85Erus',
+                },
+                {
+                  cover: '/albums/Thoughtcrime - Single.jpg',
+                  title: 'Thoughtcrime',
+                  youtubeEmbed: 'https://www.youtube.com/embed/ENcnYh79dUY',
+                },
+                {
+                  cover: '/albums/parade.jpg',
+                  title: 'Parade',
+                  youtubeEmbed: 'https://www.youtube.com/embed/ry3Tupx4BL4',
+                },
+                {
+                  cover: '/albums/負け犬にアンコールはいらない.jpg',
+                  title: 'Just a Sunny Day for You',
+                  youtubeEmbed: 'https://www.youtube.com/embed/-VKIqrvVOpo',
                 },
               ]}
             />
           </ArtistCard>
 
           <ArtistCard>
-            <ArtistName>Zutomayo</ArtistName>
-            <IntroText>Mysterious, genre-blending group with catchy beats.</IntroText>
+            <ArtistName>
+              <StyledLink href='https://zutomayo.net/'>Zutomayo</StyledLink>
+            </ArtistName>
+            <IntroText>Mysterious, genre-blending group with catchy beats.
+              <br />
+              The group has never released a full member list, crediting different people for arrangements and music video production each time. <br />
+              I love their catchy melodies and the way they blend different genres seamlessly. <br />
+              Their songs often have a dreamy quality that transports me to another world.<br />
+              Most importantly, ABSOLUTELY GOATED BASSLINES!! and fantastic animated music videos.
+              Bass solos are always a highlight for me, and Zutomayo never disappoints in that department.<br />
+              <StyledLink href='https://www.youtube.com/watch?v=up4TkZ7otHk'>Obenkyou Shitoiteyo</StyledLink> has a fantastic bass solo (starts from 1:30) that I can't get enough of!
+            </IntroText>
             <MusicGallery
               albums={[
                 {
-                  cover: '/albums/zutomayo_terifuri.jpg',
-                  title: 'Terifuri',
-                  audioSrc: '/audio/zutomayo_terifuri.mp3',
+                  cover: '/albums/Time Left - Single.jpg',
+                  title: "Time Left",
+                  youtubeEmbed: 'https://www.youtube.com/embed/6OC92oxs4gA',
+                },
+                {
+                  cover: '/albums/Hippocampal Pain - Single.jpg',
+                  title: 'Hippocampal Pain',
+                  youtubeEmbed: 'https://www.youtube.com/embed/PLG2Uexyi9s',
+                },
+                {
+                  cover: '/albums/Obenkyou Shitoiteyo - Single.jpg',
+                  title: 'Obenkyou Shitoiteyo',
+                  youtubeEmbed: 'https://www.youtube.com/embed/up4TkZ7otHk',
+                },
+                {
+                  cover: '/albums/Mirror Tune - Single.jpg',
+                  title: 'Mirror Tune',
+                  youtubeEmbed: 'https://www.youtube.com/embed/BVvvUGP0MFw',
+                },
+                {
+                  cover: '/albums/沈香学.jpg',
+                  title: 'Kira Killer',
+                  youtubeEmbed: 'https://www.youtube.com/embed/s_6rzfhDOIg',
+                },
+                {
+                  cover: '/albums/Gusare.jpg',
+                  title: "One's Mind",
+                  youtubeEmbed: 'https://www.youtube.com/embed/wQPgM-9LatM',
+                },
+                {
+                  cover: '/albums/Byoushinwo Kamu - Single.jpg',
+                  title: 'Byoushinwo Kamu',
+                  youtubeEmbed: 'https://www.youtube.com/embed/GJI4Gv7NbmE',
+                },
+                {
+                  cover: '/albums/Hogarakana Hifutote Fufuku - EP.jpg',
+                  title: 'MILABO',
+                  youtubeEmbed: 'https://www.youtube.com/embed/I88PrE-KUPk',
                 },
               ]}
             />
