@@ -44,9 +44,11 @@
 }
 
 .anime-description {
-  font-size: 16px;
-  color: #A98467;
-  margin-bottom: 16px;
+  font-size: 1rem;
+  color: #bd997cff;
+  line-height: 1.7;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
 }
 
 .main-content {
@@ -82,7 +84,7 @@
 .button-group button {
   padding: 8px 16px;
   border: none;
-  background-color: #ADC178;
+  background-color: #aec1786d;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 500;

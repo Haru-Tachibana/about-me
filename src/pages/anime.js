@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import Layout from '../components/layout'
 import '../styles/anime.css'
+import StyledButton from '../components/button'
 
 const categories = [
   { key: 'school', name: 'School' },
@@ -99,9 +100,9 @@ export default function AnimePage() {
             </div>
           )}
           <div className="button-group">
-            <button onClick={handlePrev}>{'<'} Previous</button>
-            <button onClick={handleRefresh}>Refresh</button>
-            <button onClick={handleNext}>Next {'>'}</button>
+            <StyledButton onClick={handlePrev}>{'<'}</StyledButton>
+            <StyledButton onClick={handleRefresh}>Refresh</StyledButton>
+            <StyledButton onClick={handleNext}>{'>'}</StyledButton>
           </div>
         </div>
       </div>

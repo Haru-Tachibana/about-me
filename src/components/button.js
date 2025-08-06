@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const StyledButton = styled.button`
   position: relative;
   background: transparent;
-  color: var(--dark-olive); 
+  color: var(--moss); 
   border: 1px solid var(--dark-olive);
   border-radius: 4px;
   padding: 0.75rem 1.5rem;
@@ -25,7 +25,7 @@ const StyledButton = styled.button`
     bottom: 0px;
     height: 2px;
     width: 0;
-    background-color: var(--coffee);
+    background-color: var(--moss);
     transition: width 0.3s ease;
   }
 

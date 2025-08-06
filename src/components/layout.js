@@ -5,9 +5,10 @@ import { Helmet } from 'react-helmet';
 import GlobalStyle from './GlobalStyle';
 import NavBar from './NavBar';
 import SocialSidebar from './SocialSidebar';
+import BackToTop from './Back';
 
 const Container = styled.div`
-  max-width: min(95%);  /* changed from 90% and 1200px */
+  max-width: min(95%);  
   margin: 0 auto;
   padding: 0 2rem;
 
@@ -18,7 +19,7 @@ const Container = styled.div`
 
 const Heading = styled.h1`
   text-align: left;
-  color: var(--dark-olive);   /* updated to new palette */
+  color: var(--dark-olive);   
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -27,7 +28,7 @@ const Heading = styled.h1`
 const Footer = styled.footer`
   text-align: center;
   font-size: 0.9rem;
-  color: var(--coffee);       /* updated to new palette */
+  color: var(--coffee);      
   margin-top: 2rem;
 `;
 
@@ -51,6 +52,7 @@ const Layout = ({ pageTitle, children }) => {
         {children}
         <Footer>© Yuyang Wang &middot; Updated {updatedDate}</Footer>
       </main>
+      <BackToTop />
     </Container>
   );
 };

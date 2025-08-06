@@ -15,9 +15,11 @@ export const BigHeading = styled.h1`
 `;
 
 export const AccentText = styled.span`
-  color: var(--moss);   /* for accent highlights */
+  color: #567456ff;
   font-size: 1.5rem;
+  font-weight: 700;
 `;
+
 
 export const SubHeading = styled.h2`
   font-size: 1.25rem;
@@ -28,8 +30,9 @@ export const SubHeading = styled.h2`
 
 export const BodyText = styled.p`
   font-size: 1rem;
-  color: var(--coffee);
+  color: #bd997cff;
   line-height: 1.7;
+  font-weight: 700;
   margin-bottom: 1.25rem;
 `;
 
@@ -63,5 +66,45 @@ export const StyledLink = styled.a`
   &:hover {
     text-decoration: underline;
     color: var(--coffee);
+  }
+`;
+
+export const GenreTitleBar = styled.div`
+  background-color: var(--moss);
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Fira Mono', monospace;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+`;
+
+export const TableOfContents = styled.nav`
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: var(--sage);
+  border-radius: 8px;
+  font-family: 'Fira Mono', monospace;
+  color: var(--moss);
+`;
+
+export const TOCList = styled.ul`
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0;
+`;
+
+export const TOCItem = styled.li`
+  margin-bottom: 0.5rem;
+  a {
+    color: var(--moss);
+    text-decoration: none;
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+      color: var(--coffee); 
+    }
   }
 `;
