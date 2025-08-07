@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import Layout from '../components/layout';
 import { supabase } from '../lib/supabase';
 import {
-    HeroSection,
-    AccentText,
-    BigHeading,
-    SubHeading,
-    BodyText,
+  HeroSection,
+  AccentText,
+  BigHeading,
+  SubHeading,
+  BodyText,
 } from '../components/styled';
 import styled from 'styled-components';
 import BackToTop from '../components/Back';
@@ -60,10 +60,9 @@ const NoteBlock = styled.div`
   padding: 1.25rem;
   margin-bottom: 1.5rem;
   font-family: inherit;
-  position: relative; /* Important for absolute positioning inside */
-  min-height: 120px; /* Optional: ensures consistent block size */
+  position: relative;
+  min-height: 120px;
 `;
-
 
 const QuestionText = styled.p`
   font-weight: bold;
@@ -77,7 +76,7 @@ const AnswerSection = styled.div`
   color: var(--coffee);
 `;
 
-const RevealButton = styled.button`
+const ToggleButton = styled.button`
   position: absolute;
   bottom: 1rem;
   right: 1rem;
@@ -96,109 +95,106 @@ const RevealButton = styled.button`
   }
 `;
 
-
 const AskPage = () => {
-    const [question, setQuestion] = useState('');
-    const [qaList, setQAList] = useState([]);
-    const [shownAnswers, setShownAnswers] = useState({});
+  const [question, setQuestion] = useState('');
+  const [qaList, setQAList] = useState([]);
+  const [shownAnswers, setShownAnswers] = useState({});
 
-    // Load all questions on mount
-    useEffect(() => {
-        const fetchQuestions = async () => {
-            const { data, error } = await supabase
-                .from('questions')
-                .select('*')
-                .order('created_at', { ascending: false });
+  // Fetch questions on mount
+  useEffect(() => {
+    const fetchQuestions = async () => {
+      const { data, error } = await supabase
+        .from('questions')
+        .select('*')
+        .order('created_at', { ascending: false });
 
-            if (error) {
-                console.error('Error loading questions:', error);
-            } else {
-                setQAList(data);
-            }
-        };
-
-        fetchQuestions();
-    }, []);
-
-    const submitQuestion = async (e) => {
-        e.preventDefault();
-        if (!question.trim()) return;
-
-        const { data, error } = await supabase
-            .from('questions')
-            .insert([{ question: question.trim() }])
-            .select();
-
-        if (error) {
-            console.error('Insert error:', error);
-            alert(`Failed to submit your question: ${error.message}`);
-        } else {
-            setQAList((prev) => [data[0], ...prev]);
-            setQuestion('');
-        }
+      if (error) {
+        console.error('Error loading questions:', error);
+      } else {
+        setQAList(data);
+      }
     };
 
+    fetchQuestions();
+  }, []);
 
-    const handleToggleAnswer = (index) => {
-        setShownAnswers((prev) => ({
-            ...prev,
-            [index]: !prev[index],
-        }));
-    };
+  // Submit question
+  const submitQuestion = async (e) => {
+    e.preventDefault();
+    if (!question.trim()) return;
 
+    const { data, error } = await supabase
+      .from('questions')
+      .insert([{ question: question.trim() }])
+      .select();
 
-    return (
-        <Layout pageTitle="">
-            <HeroSection>
-                <AccentText>Ask Me Anything...</AccentText>
-                <BigHeading>Leave a message</BigHeading>
-                <SubHeading>
-                    Curious about my music taste, tech stack, or what my dog eats? Ask away! <br />
-                    I’ll post answers here once I reply.
-                </SubHeading>
-                <BodyText>
-                    Questions are anonymous unless you include your name. You can ask me anything about tech, music, or life.<br />
-                    <strong>This form does not store your identity.</strong><br />
-                    <strong>Note:</strong> I may not answer all questions, but I’ll try my best to respond to as many as possible.<br />
-                    <br />
-                    <strong>DO NOT POST ANYTHING OFFENSIVE!!!</strong>
-                </BodyText>
-            </HeroSection>
+    if (error) {
+      console.error('Insert error:', error);
+      alert(`Failed to submit your question: ${error.message}`);
+    } else if (data?.length > 0) {
+      setQAList((prev) => [data[0], ...prev]);
+      setQuestion('');
+    }
+  };
 
-            <AskWrapper>
-                <Form onSubmit={submitQuestion}>
-                    <TextArea
-                        rows="4"
-                        placeholder="Type your question or message here..."
-                        value={question}
-                        onChange={(e) => setQuestion(e.target.value)}
-                    />
-                    <SubmitButton type="submit" disabled={!question.trim()}>
-                        Submit
-                    </SubmitButton>
-                </Form>
+  // Toggle answer visibility
+  const handleToggleAnswer = (id) => {
+    setShownAnswers((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
 
-                {qaList.map((qa, idx) => (
-                    <NoteBlock key={idx}>
-                        <QuestionText>Q: {qa.question}</QuestionText>
+  return (
+    <Layout pageTitle="">
+      <HeroSection>
+        <AccentText>Ask Me Anything...</AccentText>
+        <BigHeading>Leave a message</BigHeading>
+        <SubHeading>
+          Curious about my music taste, tech stack, or what my dog eats? Ask away! <br />
+          I’ll post answers here once I reply.
+        </SubHeading>
+        <BodyText>
+          Questions are anonymous unless you include your name. You can ask me anything about tech, music, or life.<br />
+          <strong>This form does not store your identity.</strong><br />
+          <strong>Note:</strong> I may not answer all questions, but I’ll try my best to respond to as many as possible.<br />
+          <br />
+          <strong>DO NOT POST ANYTHING OFFENSIVE!!!</strong>
+        </BodyText>
+      </HeroSection>
 
-                        {shownAnswers[idx] && (
-                            <AnswerSection>
-                                <p><strong>A:</strong> {qa.answer ?? "Check later~ I haven't checked yet."}</p>
-                            </AnswerSection>
-                        )}
+      <AskWrapper>
+        <Form onSubmit={submitQuestion}>
+          <TextArea
+            rows="4"
+            placeholder="Type your question or message here..."
+            value={question}
+            onChange={(e) => setQuestion(e.target.value)}
+          />
+          <SubmitButton type="submit" disabled={!question.trim()}>
+            Submit
+          </SubmitButton>
+        </Form>
 
-                        <RevealButton onClick={() => handleToggleAnswer(idx)}>
-                            {shownAnswers[idx] ? 'Hide Answer' : 'See Answer'}
-                        </RevealButton>
-                    </NoteBlock>
-                ))}
+        {qaList.map((qa) => (
+          <NoteBlock key={qa.id}>
+            <QuestionText>Q: {qa.question}</QuestionText>
 
+            {shownAnswers[qa.id] && (
+              <AnswerSection>
+                <p><strong>A:</strong> {qa.answer ?? "Check later~ I haven't checked yet."}</p>
+              </AnswerSection>
+            )}
 
-            </AskWrapper>
-            <BackToTop />
-        </Layout>
-    );
+            <ToggleButton onClick={() => handleToggleAnswer(qa.id)}>
+              {shownAnswers[qa.id] ? 'Hide Answer' : 'See Answer'}
+            </ToggleButton>
+          </NoteBlock>
+        ))}
+      </AskWrapper>
+      <BackToTop />
+    </Layout>
+  );
 };
 
 export default AskPage;
