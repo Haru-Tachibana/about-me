@@ -3,4 +3,4 @@ node_modules/
 public
 .env
 .env.local
-。env*
+.env.development
