@@ -47,11 +47,21 @@ const Music = () => {
         </TOCList>
       </TableOfContents>
       <SubHeading>
-        I enjoy a wide range of music genres, with rock being my favorite.
+        I enjoy a wide range of music genres, with rock being my favourite.
         Here’s a curated list of the artists and styles I love the most,
-        with some personal notes and albums below.
-      </SubHeading>
+        with some personal notes and albums below.<br />
+        Click on the artists names to visit their official websites or social media pages.<br />
+        Click on the album covers to listen to their music on YouTube, I picked my favourite songs for each album but feel free to check the full album. <br />
 
+      </SubHeading>
+      <br />
+      <BodyText>
+        *Note: The list is not exhaustive, I will keep updating it as I discover more music.
+        <br />
+        If you have any recommendations, feel free to reach out!
+        <br />
+        It's a long list so use the table of contents above to navigate through different genres. There's a back-to-top button at the bottom right so you can easily return to the top of the page. <br />
+      </BodyText>
 
       <HeroSection>
         <div id="rock">
@@ -200,7 +210,7 @@ const Music = () => {
               <br />
               Yorushika's music often explores themes of love, loss, and the passage of time, resonating deeply with listeners. <br />
               Their unique sound, blending rock and pop elements, creates an emotional and immersive experience.<br />
-              They always drop beautiful and qality songs (thanks n-buna and suis) and I LOVE THEIR GUIRAR SOLOS. <br />
+              They always drop beautiful and qality songs (thanks n-buna and suis) and I LOVE THEIR GUITAR SOLOS. <br />
               <StyledLink href='https://www.youtube.com/watch?v=lJ1UuhLqY5E&list=RDlJ1UuhLqY5E&start_radio=1&rv=lJ1UuhLqY5E'>Plagiarism</StyledLink> and <StyledLink href='https://www.youtube.com/watch?v=4MoRLTAJY_0&list=PLUQKJP1sVuNOEqkssSr7KokY_mS2beyEs'>That's Why I Gave Up on Music</StyledLink> are my favourite albums. <br />
               <StyledLink href='https://www.youtube.com/channel/UCRbsmnDTHD9-4pEIuG7zYRw'>rachie 🎀💌</StyledLink> has amazing English cover for lots of Yorushika songs, please check <StyledLink href='https://www.youtube.com/watch?v=sAAfVjUwVc4'>Thought Crime</StyledLink>, I absolutely LOVE the lyrics.
             </IntroText>
@@ -294,21 +304,137 @@ const Music = () => {
 
       <HeroSection>
         <div id="vocaloid">
-          <GenreTitleBar>Vocaloid</GenreTitleBar>
+          <GenreTitleBar>
+            Vocaloid
+          </GenreTitleBar>
           <BodyText>
-            Vocaloid music blends technology and creativity, with amazing producers crafting memorable tunes.
+            <StyledLink href='https://en.wikipedia.org/wiki/Vocaloid'>
+              Vocaloid</StyledLink> is a singing voice synthesis software developed by Yamaha. <br />
+            It allows users to create vocal tracks for songs by inputting lyrics and melodies. Vocaloid uses voicebanks, which are recordings of real human voices, to synthesize the singing.
+            <br />My favourite Vocaloid characters are <StyledLink href='https://en.wikipedia.org/wiki/Hatsune_Miku'>Hatsune Miku</StyledLink> and <StyledLink href='https://vocaloid.fandom.com/wiki/Kagamine_Rin_%26_Len'>Kagamine Rin & Len</StyledLink>. <br />
           </BodyText>
 
           <ArtistCard>
-            <ArtistName>Hachioji P</ArtistName>
-            <IntroText>Known for catchy melodies and storytelling.</IntroText>
+            <ArtistName>
+              <StyledLink href='https://www.youtube.com/channel/UCvq3kUGY5Dbsdkr3DZx25Sw'>Giga</StyledLink>
+            </ArtistName>
+            <IntroText>
+              GigaP (ギガP) is a producer well-known for his energetic songs and skill in tuning VOCALOIDs, especially the two Kagamine voicebanks. <br />
+              Giga's songs and their PV's embody what I love about some of my favourite vocaloid music. The electronic genre, fast pace, the flashy and colorful PV's.
+            </IntroText>
             <MusicGallery
               albums={[
                 {
-                  cover: '/albums/hachiojiP_album1.jpg',
-                  title: 'Kimi no Taion',
-                  audioSrc: '/audio/hachiojiP_kiminotaion.mp3',
+                  cover: '/albums/劣等上等 feat. 鏡音リン・レン - Single.jpg',
+                  title: "BRING IT ON! (Rettou Joutou) ft. Kagamine Rin & Len",
+                  youtubeEmbed: 'https://www.youtube.com/embed/oEkGC2HV7rc',
                 },
+                {
+                  cover: '/albums/Ready Steady (feat. Hatsune Miku, Kagamine Rin & Kagamine Len) - Single.jpg',
+                  title: 'Ready Steady',
+                  youtubeEmbed: 'https://www.youtube.com/embed/XAg1jDDG49Y',
+                },
+                {
+                  cover: '/albums/CH4NGE - Single.jpg',
+                  title: 'CH4NGE ft.Kafu',
+                  youtubeEmbed: 'https://www.youtube.com/embed/LbO4pg_LHUI',
+                },
+                {
+                  cover: '/albums/Graphix.jpg',
+                  title: '「Gimme×Gimme feat. 初音ミク・鏡音リン」',
+                  youtubeEmbed: 'https://www.youtube.com/embed/ERo-sPa1a5g',
+                },
+                {
+                  cover: '/albums/No title+.jpg',
+                  title: 'ヒビカセ (Hibikase)',
+                  youtubeEmbed: 'https://www.youtube.com/embed/TkroHwQYpFE',
+                },
+                {
+                  cover: '/albums/G4L - Single.jpg',
+                  title: 'G4L',
+                  youtubeEmbed: 'https://www.youtube.com/embed/huO5w9GfSio',
+                },
+                {
+                  cover: '/albums/GETCHA! (feat. Hatsune Miku & GUMI) - Single.jpg',
+                  title: 'GETCHA!',
+                  youtubeEmbed: 'https://www.youtube.com/embed/KRVFPPYcJUc',
+                },
+                {
+                  cover: '/albums/プレイ - Single.jpg',
+                  title: 'Play',
+                  youtubeEmbed: 'https://www.youtube.com/embed/6JEdJWwcIyk',
+                }
+              ]}
+            />
+          </ArtistCard>
+
+
+          <ArtistCard>
+            <ArtistName>
+              <StyledLink href='https://vocaloid.fandom.com/wiki/R-906'>r-906</StyledLink>
+            </ArtistName>
+            <IntroText>
+              r-906 (pronounced “arukuremu”) specialises in music based on drum'n'bass <StyledLink href='https://www.reddit.com/r/Vocaloid/comments/1cq9vgh/vocaloid_drum_bass_recs/'>(if you like both DnB and Vocaloid..here's some recommendations)</StyledLink>and other dance genres.<br />
+              He mainly uses Hatsune Miku and <StyledLink href='https://vocalsynth.fandom.com/wiki/KAFU'>KAFU</StyledLink> as vocalists. <br />
+              Panopticon <StyledLink href='https://en.wikipedia.org/wiki/Panopticon'>(Wiki page for Panopticon Prison)</StyledLink> is my first r-906 song I listened to, and I was immediately hooked by the DnB vibe.<br />
+            </IntroText>
+            <MusicGallery
+              albums={[
+                {
+                  cover: '/albums/パノプティコン - Single.jpg',
+                  title: 'Panopticon',
+                  youtubeEmbed: 'https://www.youtube.com/embed/_-Vd0ZGB-lo',
+                },
+                {
+                  cover: '/albums/まにまに - Single.jpg',
+                  title: "Manimani",
+                  youtubeEmbed: 'https://www.youtube.com/embed/9O2VyUM5MlQ',
+                },
+                {
+                  cover: '/albums/A Spoonful of Spell (feat. HATSUNE MIKU) - Single.jpg',
+                  title: 'A Spoonful of Spell',
+                  youtubeEmbed: 'https://www.youtube.com/embed/B6vKLsh09Qw',
+                },
+                {
+                  cover: '/albums/diaLOG.jpg',
+                  title: 'Hello Marina',
+                  youtubeEmbed: 'https://www.youtube.com/embed/xv7hJ32xK94',
+                }
+
+              ]}
+            />
+          </ArtistCard>
+
+          <ArtistCard>
+            <ArtistName>
+              <StyledLink href='https://vocaloid.fandom.com/wiki/Inabakumori'>稲葉曇｜INABAKUMORI</StyledLink>
+            </ArtistName>
+            <IntroText>Inabakumori (稲葉曇) is a VOCALOID producer known for his techno and pop works, and high-energy covers. <br />
+              He started his career in 2016 and primarily uses Kaai Yuki. <br />
+              I like the unique sounds he's making and ethereal vocals.  </IntroText>
+            <MusicGallery
+              albums={[
+                {
+                  cover: '/albums/ラグトレイン - Single.jpg',
+                  title: 'Lagtrain',
+                  youtubeEmbed: 'https://www.youtube.com/embed/UnIhRpIT7nc',
+                },
+                {
+                  cover: '/albums/私は雨 - Single.jpg',
+                  title: "I'm the Rain",
+                  youtubeEmbed: 'https://www.youtube.com/embed/EEk4JGzqoFg',
+                },
+                {
+                  cover: '/albums/アンチサイクロン.jpg',
+                  title: 'Anticyclone',
+                  youtubeEmbed: 'https://www.youtube.com/embed/2_93SNGYgYs',
+                },
+                {
+                  cover: '/albums/ハローマリーナ - Single.jpg',
+                  title: 'Hello Marina',
+                  youtubeEmbed: 'https://www.youtube.com/embed/g6sYNwl1EWg',
+                }
+
               ]}
             />
           </ArtistCard>

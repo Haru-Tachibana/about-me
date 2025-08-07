@@ -37,6 +37,7 @@ const NavBar = () => {
       <NavLink to="/projects">Projects</NavLink>
       <NavLink to="/music">Music</NavLink>
       <NavLink to="/anime">Anime</NavLink>
+      <NavLink to="/ask">Ask Me</NavLink>
     </Nav>
   );
 };

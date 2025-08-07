@@ -15,7 +15,7 @@ export const BigHeading = styled.h1`
 `;
 
 export const AccentText = styled.span`
-  color: #567456ff;
+  color: #63845dff;
   font-size: 1.5rem;
   font-weight: 700;
 `;
