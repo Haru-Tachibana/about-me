@@ -445,7 +445,7 @@ const Music = () => {
         <div id="anime">
           <GenreTitleBar>Anime OP & ED / Game OST</GenreTitleBar>
           <BodyText>
-            I love soundtracks and openings that capture the essence of the story and emotions.
+            I love soundtracks from games or anime that capture the essence of the story and emotions. <br />
           </BodyText>
 
           <ArtistCard>
@@ -469,24 +469,44 @@ const Music = () => {
             <MusicGallery
               albums={[
                 {
+                  cover: '/albums/the-genesis.webp',
+                  title: 'THE GENESIS',
+                  youtubeEmbed: 'https://www.youtube.com/embed/jhz4PRRG2Q8'
+                },
+                {
                   cover: '/albums/あんさんぶるスターズ!! ESアイドルソング season1 Eden - Single.jpg',
                   title: 'Rakuen Tsuihou -Faith Conquest-',
                   youtubeEmbed: 'https://www.youtube.com/embed/NixzrXh8xy0',
                 },
                 {
-                  cover: '/albums/私は雨 - Single.jpg',
-                  title: "I'm the Rain",
-                  spotifyEmbed: 'https://open.spotify.com/embed/track/3s5sFHV8VTzg0CSXy3gz5y?utm_source=generator'
+                  cover: '/albums/あんさんぶるスターズ!! ESアイドルソング season5 Eden「円環のRefraction」 - Single.jpg',
+                  title: "Enkan No Refraction",
+                  youtubeEmbed: 'https://www.youtube.com/embed/5Gkj5aoZYrc'
                 },
                 {
-                  cover: '/albums/アンチサイクロン.jpg',
-                  title: 'Anticyclone',
-                  youtubeEmbed: 'https://www.youtube.com/embed/2_93SNGYgYs'
+                  cover: '/albums/あんさんぶるスターズ!!アルバムシリーズ 『TRIP』 Eden.jpg',
+                  title: 'KEEP OUT',
+                  youtubeEmbed: 'https://www.youtube.com/embed/Is7ehYtWpPo'
                 },
                 {
-                  cover: '/albums/ハローマリーナ - Single.jpg',
-                  title: 'Hello Marina',
-                  spotifyEmbed: 'https://open.spotify.com/embed/track/3iqYC2gMPND9ChNmmK0mLD?utm_source=generator'
+                  cover: '/albums/Eden「EXCEED」あんさんぶるスターズ!! ESアイドルソング season2 - Single.jpg',
+                  title: 'EXCEED',
+                  youtubeEmbed: 'https://www.youtube.com/embed/slqYcVx-b0I'
+                },
+                {
+                  cover: '/albums/Melting_Rouge_Soul_Cover.webp',
+                  title: 'Melting Rouge Soul',
+                  youtubeEmbed: 'https://www.youtube.com/embed/iiDo_BWVAnU'
+                },
+                {
+                  cover: '/albums/あんさんぶるスターズ!アルバムシリーズ Eden.jpg',
+                  title: 'Trap For You',
+                  youtubeEmbed: 'https://www.youtube.com/embed/GDEafa64Gng'
+                },
+                {
+                  cover: '/albums/Ruby_Love_Cover.webp',
+                  title: 'Ruby Love',
+                  youtubeEmbed: 'https://www.youtube.com/embed/Wdwz2381KDM'
                 }
               ]}
             />
