@@ -123,16 +123,19 @@ const AskPage = () => {
     e.preventDefault();
     if (!question.trim()) return;
 
-    const { data, error } = await supabase
-      .from('questions')
-      .insert([{ question: question.trim() }])
-      .select();
+    const res = await fetch('/.netlify/functions/submit-question', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ question: question.trim() }),
+    });
 
-    if (error) {
-      console.error('Insert error:', error);
-      alert(`Failed to submit your question: ${error.message}`);
-    } else if (data?.length > 0) {
-      setQAList((prev) => [data[0], ...prev]);
+
+    const result = await res.json();
+    if (result.error) {
+      console.error('Insert error:', result.error);
+      alert(`Failed to submit your question: ${result.error}`);
+    } else {
+      setQAList((prev) => [result.data, ...prev]);
       setQuestion('');
     }
   };
