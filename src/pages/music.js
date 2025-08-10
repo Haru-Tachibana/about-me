@@ -92,17 +92,17 @@ const Music = () => {
                 {
                   cover: '/albums/DETOX (Japanese Version).jpg',
                   title: 'C.U.R.I.O.S.I.T.Y. feat. Paledusk and CHICO CARLITO',
-                  youtubeEmbed: 'https://www.youtube.com/embed/EPlFuHhE05g',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/4UKANDuD17KGukGIp5g0Cx?utm_source=generator',
                 },
                 {
                   cover: '/albums/Ambitions.jpg',
                   title: 'I Was King',
-                  youtubeEmbed: 'https://www.youtube.com/embed/M0V46khLWnk',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/5eNlrdrZSTnfJjXpPg1ykV?utm_source=generator',
                 },
                 {
                   cover: '/albums/35xxxv.jpg',
                   title: 'One by One',
-                  youtubeEmbed: 'https://www.youtube.com/embed/R1kCHYQBEa4?si=hjePSLYx7glSW6Ym',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/3OJQ53NHwPC2rKKwE5wvdc?utm_source=generator',
                 },
                 {
                   cover: '/albums/Eye of the Storm.jpg',
@@ -112,7 +112,7 @@ const Music = () => {
                 {
                   cover: '/albums/Zeitakubyō.jpg',
                   title: '欲望に満ちた青年団',
-                  youtubeEmbed: 'https://www.youtube.com/embed/tVNPatb4M_A',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/6D6Pybzey0shI8U9ttRAPx?utm_source=generator',
                 },
               ]}
             />
@@ -418,24 +418,25 @@ const Music = () => {
                   cover: '/albums/ラグトレイン - Single.jpg',
                   title: 'Lagtrain',
                   youtubeEmbed: 'https://www.youtube.com/embed/UnIhRpIT7nc',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC'
                 },
                 {
                   cover: '/albums/私は雨 - Single.jpg',
                   title: "I'm the Rain",
-                  youtubeEmbed: 'https://www.youtube.com/embed/EEk4JGzqoFg',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/2Rqt5gk3jCSTrQvB4QkWrf'
                 },
                 {
                   cover: '/albums/アンチサイクロン.jpg',
                   title: 'Anticyclone',
-                  youtubeEmbed: 'https://www.youtube.com/embed/2_93SNGYgYs',
+                  youtubeEmbed: 'https://www.youtube.com/embed/2_93SNGYgYs'
                 },
                 {
                   cover: '/albums/ハローマリーナ - Single.jpg',
                   title: 'Hello Marina',
-                  youtubeEmbed: 'https://www.youtube.com/embed/g6sYNwl1EWg',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/3n3Ppam7vgaVa1iaRUc9Lp'
                 }
-
               ]}
+
             />
           </ArtistCard>
         </div>
