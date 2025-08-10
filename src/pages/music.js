@@ -135,22 +135,22 @@ const Music = () => {
                 {
                   cover: '/albums/SUPERMODEL - Single.jpg',
                   title: 'SUPERMODEL',
-                  youtubeEmbed: 'https://www.youtube.com/embed/jODrVofka54',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/63WuQOXohQIxOxIFA2K7bR?utm_source=generator',
                 },
                 {
                   cover: '/albums/Teatro.jpg',
                   title: 'I WANNA BE YOUR SLAVE',
-                  youtubeEmbed: 'https://www.youtube.com/embed/yOb9Xaug35M',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/4pt5fDVTg5GhEvEtlz9dKk?utm_source=generator',
                 },
                 {
                   cover: '/albums/RUSH! (ARE U COMING_).jpg',
                   title: 'GOSSIP (feat. Tom Morello)',
-                  youtubeEmbed: 'https://www.youtube.com/embed/XrsbfrFPATs',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/4GvPlSOKfN7aXEuGW8zKUx?utm_source=generator',
                 },
                 {
                   cover: '/albums/Il ballo della vita.jpg',
                   title: "L'altra dimensione",
-                  youtubeEmbed: 'https://www.youtube.com/embed/tTKuYa0MxsY',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/36ONZ2CvV8KsLPapNPGTqa?utm_source=generator',
                 },
               ]}
             />
@@ -171,22 +171,22 @@ const Music = () => {
                 {
                   cover: '/albums/From Zero (Deluxe Edition).jpg',
                   title: "The Emptiness Machine",
-                  youtubeEmbed: 'https://www.youtube.com/embed/SRXH9AbT280',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/2PnlsTsOTLE5jnBnNe2K0A?utm_source=generator',
                 },
                 {
                   cover: '/albums/Meteora (20th Anniversary Edition).jpg',
                   title: 'Lost',
-                  youtubeEmbed: 'https://www.youtube.com/embed/7NK_JOkuSVY',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/373gDROnujxNTFa1FojYIl?utm_source=generator',
                 },
                 {
                   cover: '/albums/numb.png',
                   title: 'Numb',
-                  youtubeEmbed: 'https://www.youtube.com/embed/kXYiU_JCYtU',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/2nLtzopw4rPReszdYBJU6h?utm_source=generator',
                 },
                 {
                   cover: '/albums/Papercut.png',
                   title: 'Papercut',
-                  youtubeEmbed: 'https://www.youtube.com/embed/vjVkXlxsO8Q',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/1Vej0qeQ3ioKwpI6FUbRv1?utm_source=generator',
                 },
               ]}
             />
@@ -224,7 +224,7 @@ const Music = () => {
                 {
                   cover: '/albums/Thoughtcrime - Single.jpg',
                   title: 'Thoughtcrime',
-                  youtubeEmbed: 'https://www.youtube.com/embed/ENcnYh79dUY',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/5o3LSzu8xCMDpbAwm4dZ46?utm_source=generator',
                 },
                 {
                   cover: '/albums/parade.jpg',
@@ -258,42 +258,42 @@ const Music = () => {
                 {
                   cover: '/albums/Time Left - Single.jpg',
                   title: "Time Left",
-                  youtubeEmbed: 'https://www.youtube.com/embed/6OC92oxs4gA',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/01Fyk7TF6G3w967aU3w33c?utm_source=generator',
                 },
                 {
                   cover: '/albums/Hippocampal Pain - Single.jpg',
                   title: 'Hippocampal Pain',
-                  youtubeEmbed: 'https://www.youtube.com/embed/PLG2Uexyi9s',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/6QJ4Z6FMnkznUCsrdUthyt?utm_source=generator',
                 },
                 {
                   cover: '/albums/Obenkyou Shitoiteyo - Single.jpg',
                   title: 'Obenkyou Shitoiteyo',
-                  youtubeEmbed: 'https://www.youtube.com/embed/up4TkZ7otHk',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/4zKlYkf8A4QJqX1D9oGFZU?utm_source=generator',
                 },
                 {
                   cover: '/albums/Mirror Tune - Single.jpg',
                   title: 'Mirror Tune',
-                  youtubeEmbed: 'https://www.youtube.com/embed/BVvvUGP0MFw',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/0R8JLNP107Hr7V7lL9oh13?utm_source=generator',
                 },
                 {
                   cover: '/albums/沈香学.jpg',
                   title: 'Kira Killer',
-                  youtubeEmbed: 'https://www.youtube.com/embed/s_6rzfhDOIg',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/3OJD5e6NPI1N99LOxtGqWx?utm_source=generator',
                 },
                 {
                   cover: '/albums/Gusare.jpg',
                   title: "One's Mind",
-                  youtubeEmbed: 'https://www.youtube.com/embed/wQPgM-9LatM',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/6Xa2lIKWD2P72bSuR7tF4y?utm_source=generator',
                 },
                 {
                   cover: '/albums/Byoushinwo Kamu - Single.jpg',
                   title: 'Byoushinwo Kamu',
-                  youtubeEmbed: 'https://www.youtube.com/embed/GJI4Gv7NbmE',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/1VI0xGKX9rZravGlCmLXWz?utm_source=generator',
                 },
                 {
                   cover: '/albums/Hogarakana Hifutote Fufuku - EP.jpg',
                   title: 'MILABO',
-                  youtubeEmbed: 'https://www.youtube.com/embed/I88PrE-KUPk',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/4fDWZUtMp2Aoe8wmenloa7?utm_source=generator',
                 },
               ]}
             />
@@ -332,12 +332,12 @@ const Music = () => {
                 {
                   cover: '/albums/Ready Steady (feat. Hatsune Miku, Kagamine Rin & Kagamine Len) - Single.jpg',
                   title: 'Ready Steady',
-                  youtubeEmbed: 'https://www.youtube.com/embed/XAg1jDDG49Y',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/1GxzaUNoSvzNqL4JB9ztXq?utm_source=generator',
                 },
                 {
                   cover: '/albums/CH4NGE - Single.jpg',
                   title: 'CH4NGE ft.Kafu',
-                  youtubeEmbed: 'https://www.youtube.com/embed/LbO4pg_LHUI',
+                  youtubeEmbed: 'https://open.spotify.com/embed/track/3ipGZWQ7Q64OA7SwFNVfy2?utm_source=generator',
                 },
                 {
                   cover: '/albums/Graphix.jpg',
@@ -352,17 +352,17 @@ const Music = () => {
                 {
                   cover: '/albums/G4L - Single.jpg',
                   title: 'G4L',
-                  youtubeEmbed: 'https://www.youtube.com/embed/huO5w9GfSio',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/75CyctEqXZBFn2jemgcb1B?utm_source=generator',
                 },
                 {
                   cover: '/albums/GETCHA! (feat. Hatsune Miku & GUMI) - Single.jpg',
                   title: 'GETCHA!',
-                  youtubeEmbed: 'https://www.youtube.com/embed/KRVFPPYcJUc',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/3mXLyNsVeLelMakgpGUp1f?utm_source=generator',
                 },
                 {
                   cover: '/albums/プレイ - Single.jpg',
                   title: 'Play',
-                  youtubeEmbed: 'https://www.youtube.com/embed/6JEdJWwcIyk',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/4dSanhvaTVCDyVbnl6Uw8T?utm_source=generator',
                 }
               ]}
             />
@@ -418,12 +418,11 @@ const Music = () => {
                   cover: '/albums/ラグトレイン - Single.jpg',
                   title: 'Lagtrain',
                   youtubeEmbed: 'https://www.youtube.com/embed/UnIhRpIT7nc',
-                  spotifyEmbed: 'https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC'
                 },
                 {
                   cover: '/albums/私は雨 - Single.jpg',
                   title: "I'm the Rain",
-                  spotifyEmbed: 'https://open.spotify.com/embed/track/2Rqt5gk3jCSTrQvB4QkWrf'
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/3s5sFHV8VTzg0CSXy3gz5y?utm_source=generator'
                 },
                 {
                   cover: '/albums/アンチサイクロン.jpg',
@@ -433,7 +432,7 @@ const Music = () => {
                 {
                   cover: '/albums/ハローマリーナ - Single.jpg',
                   title: 'Hello Marina',
-                  spotifyEmbed: 'https://open.spotify.com/embed/track/3n3Ppam7vgaVa1iaRUc9Lp'
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/3iqYC2gMPND9ChNmmK0mLD?utm_source=generator'
                 }
               ]}
 
