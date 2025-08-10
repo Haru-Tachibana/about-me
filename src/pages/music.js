@@ -449,20 +449,45 @@ const Music = () => {
           </BodyText>
 
           <ArtistCard>
-            <ArtistName>Ensemble Stars!!</ArtistName>
-            <IntroText>Especially adore sound tracks from groups "Eden" and "Valkyrie."</IntroText>
+            <ArtistName>
+              <StyledLink href='https://ensemble-stars.fandom.com/wiki/Eden'>Ensemble Stars!! - Eden</StyledLink>
+            </ArtistName>
+            <IntroText>
+              Eden is a 4-member Japanese unit of ENSEMBLE STARS!! under the agency <StyledLink href='https://ensemble-stars.fandom.com/wiki/COSMIC_PRODUCTION'>COSMIC PRODUCTION</StyledLink>.
+              <br />The 4-members are <StyledLink href='https://ensemble-stars.fandom.com/wiki/Nagisa_Ran'>Nagisa Ran</StyledLink>, <StyledLink href='https://ensemble-stars.fandom.com/wiki/Hiyori_Tomoe'>Hiyori Tomoe</StyledLink>, <StyledLink href='https://ensemble-stars.fandom.com/wiki/Ibara_Saegusa'>Ibara Saegusa</StyledLink>, and <StyledLink href='https://ensemble-stars.fandom.com/wiki/Jun_Sazanami'>Jun Sazanami</StyledLink>.
+              <br />
+              Eden is a noble and vigorous unit led by Nagisa Ran. Eden members deliver heart-winning speeches during fan services, accompanied by opulent and dramatic performances.
+              <br />
+              Eden is one of the top three units in the industry along with <StyledLink href='https://ensemble-stars.fandom.com/wiki/Knights'>Knights</StyledLink> and <StyledLink href='https://ensemble-stars.fandom.com/wiki/Fine'>fine</StyledLink> (where my favourite character <StyledLink href='https://ensemble-stars.fandom.com/wiki/Wataru_Hibiki'>Wataru Hibiki</StyledLink> belongs to).
+              <br />
+              <StyledLink href='https://ensemble-stars.fandom.com/wiki/Adam'>Adam</StyledLink> - Nagisa Ran & Ibara Saegusa <br />
+              <StyledLink href='https://ensemble-stars.fandom.com/wiki/Eve'>Eve</StyledLink> - Hiyori Tomoe & Jun Sazanami
+              <br />
+              <img src='/images/eden-map.webp' alt="Eden"
+                style={{ maxWidth: '100%', height: 'auto' }} />
+            </IntroText>
             <MusicGallery
               albums={[
                 {
-                  cover: '/albums/ensemble_eden.jpg',
-                  title: 'Eden',
-                  audioSrc: '/audio/ensemble_eden.mp3',
+                  cover: '/albums/あんさんぶるスターズ!! ESアイドルソング season1 Eden - Single.jpg',
+                  title: 'Rakuen Tsuihou -Faith Conquest-',
+                  youtubeEmbed: 'https://www.youtube.com/embed/NixzrXh8xy0',
                 },
                 {
-                  cover: '/albums/ensemble_valkyrie.jpg',
-                  title: 'Valkyrie',
-                  audioSrc: '/audio/ensemble_valkyrie.mp3',
+                  cover: '/albums/私は雨 - Single.jpg',
+                  title: "I'm the Rain",
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/3s5sFHV8VTzg0CSXy3gz5y?utm_source=generator'
                 },
+                {
+                  cover: '/albums/アンチサイクロン.jpg',
+                  title: 'Anticyclone',
+                  youtubeEmbed: 'https://www.youtube.com/embed/2_93SNGYgYs'
+                },
+                {
+                  cover: '/albums/ハローマリーナ - Single.jpg',
+                  title: 'Hello Marina',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/3iqYC2gMPND9ChNmmK0mLD?utm_source=generator'
+                }
               ]}
             />
           </ArtistCard>
@@ -473,10 +498,25 @@ const Music = () => {
             <MusicGallery
               albums={[
                 {
-                  cover: '/albums/persona5_album.jpg',
-                  title: 'Persona 5 OST',
-                  audioSrc: '/audio/persona5_theme.mp3',
+                  cover: '/albums/あんさんぶるスターズ!! ESアイドルソング season1 Eden - Single.jpg',
+                  title: 'Rakuen Tsuihou -Faith Conquest-',
+                  youtubeEmbed: 'https://www.youtube.com/embed/NixzrXh8xy0',
                 },
+                {
+                  cover: '/albums/あんさんぶるスターズ!! ESアイドルソング season5 Eden「円環のRefraction」 - Single.jpg',
+                  title: "Enkan No Refraction",
+                  youtubeEmbed: 'https://www.youtube.com/embed/5Gkj5aoZYrc'
+                },
+                {
+                  cover: '/albums/アンチサイクロン.jpg',
+                  title: 'Anticyclone',
+                  youtubeEmbed: 'https://www.youtube.com/embed/2_93SNGYgYs'
+                },
+                {
+                  cover: '/albums/ハローマリーナ - Single.jpg',
+                  title: 'Hello Marina',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/3iqYC2gMPND9ChNmmK0mLD?utm_source=generator'
+                }
               ]}
             />
           </ArtistCard>
