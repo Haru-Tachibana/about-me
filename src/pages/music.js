@@ -446,6 +446,7 @@ const Music = () => {
           <GenreTitleBar>Anime OP & ED / Game OST</GenreTitleBar>
           <BodyText>
             I love soundtracks from games or anime that capture the essence of the story and emotions. <br />
+            There are too many great anime soundtracks to list...so I will just list some of my favourite artists and albums.
           </BodyText>
 
           <ArtistCard>
@@ -513,29 +514,39 @@ const Music = () => {
           </ArtistCard>
 
           <ArtistCard>
-            <ArtistName>Persona series OST</ArtistName>
-            <IntroText>Deep, atmospheric music that perfectly fits the game’s vibe.</IntroText>
+            <ArtistName><StyledLink href='https://persona.atlus.com/series/'>Persona</StyledLink> Music</ArtistName>
+            <IntroText>
+              The Persona series is renowned not just for its captivating narratives and stylish visuals, but for its incredibly diverse and impactful musical scores. 
+              <br />Each installment offers a unique blend of genres, from the hip-hop and electronic undertones of Persona 3 to the upbeat J-Pop and jazz elements of Persona 4 Golden and the smooth acid jazz sound of Persona 5. 
+              <br />This dynamic range ensures that every game’s soundtrack is fresh and engaging, while always hitting the emotional mark perfectly.
+              <br />Fantastic basslines, catchy melodies, and memorable lyrics are the hallmarks of Persona music.
+            </IntroText>
             <MusicGallery
               albums={[
                 {
-                  cover: '/albums/あんさんぶるスターズ!! ESアイドルソング season1 Eden - Single.jpg',
-                  title: 'Rakuen Tsuihou -Faith Conquest-',
-                  youtubeEmbed: 'https://www.youtube.com/embed/NixzrXh8xy0',
+                  cover: '/albums/Persona 3 Reload (Original Soundtrack).jpg',
+                  title: 'Full Moon Full Life',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/3Jl2LQmRwbXEF2lO1RTvxn?utm_source=generator',
                 },
                 {
-                  cover: '/albums/あんさんぶるスターズ!! ESアイドルソング season5 Eden「円環のRefraction」 - Single.jpg',
-                  title: "Enkan No Refraction",
-                  youtubeEmbed: 'https://www.youtube.com/embed/5Gkj5aoZYrc'
+                  cover: '/albums/ネバー・モア-『ペルソナ4』輪廻転生-.jpg',
+                  title: 'specialist',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/5UWJxql2C2VNLAusOQRjt1?utm_source=generator',
                 },
                 {
-                  cover: '/albums/アンチサイクロン.jpg',
-                  title: 'Anticyclone',
-                  youtubeEmbed: 'https://www.youtube.com/embed/2_93SNGYgYs'
+                  cover: '/albums/ペルソナ3 オリジナル・サウンドトラック.jpg',
+                  title: "Mass Destruction",
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/4Ni2mtHVH4yvlVRM3KlKfd?utm_source=generator'
                 },
                 {
-                  cover: '/albums/ハローマリーナ - Single.jpg',
-                  title: 'Hello Marina',
-                  spotifyEmbed: 'https://open.spotify.com/embed/track/3iqYC2gMPND9ChNmmK0mLD?utm_source=generator'
+                  cover: '/albums/Color Your Night (feat. Mei, Khigamis & Adya Nadira) - Single.jpg',
+                  title: 'Color Your Night',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/4pjFNyjGaoKgLTnndISP6V?utm_source=generator'
+                },
+                {
+                  cover: '/albums/Persona 5 (Original Soundtrack).jpg',
+                  title: 'Last Surprise',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/4cPnNnTMkJ6soUOUzEtmcp?utm_source=generator'
                 }
               ]}
             />

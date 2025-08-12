@@ -33,7 +33,7 @@ const IndexPage = () => {
             style={{ maxWidth: '100%', height: 'auto' }}
           />
 
-          <BodyText>As for sports, I usually don't like to excercise but I do enjoy badminton, swimming and climbing (fun fact I'm pretty good at badminton).</BodyText>
+          <BodyText>As for sports, I usually don't like to excercise but I do enjoy badminton, swimming, darts and climbing (fun fact I'm pretty good at badminton).</BodyText>
         </SubHeading>
         <SubHeading>
           More about Music: I play bass guitar in bands.
