@@ -88,6 +88,7 @@ const Music = () => {
                   cover: '/albums/JinseiBoku.jpg',
                   title: 'The Beginning',
                   youtubeEmbed: 'https://www.youtube.com/embed/Hh9yZWeTmVM',
+                  
                 },
                 {
                   cover: '/albums/DETOX (Japanese Version).jpg',
@@ -100,14 +101,9 @@ const Music = () => {
                   spotifyEmbed: 'https://open.spotify.com/embed/track/5eNlrdrZSTnfJjXpPg1ykV?utm_source=generator',
                 },
                 {
-                  cover: '/albums/35xxxv.jpg',
-                  title: 'One by One',
-                  spotifyEmbed: 'https://open.spotify.com/embed/track/3OJQ53NHwPC2rKKwE5wvdc?utm_source=generator',
-                },
-                {
-                  cover: '/albums/Eye of the Storm.jpg',
-                  title: 'Stand Out Fit In',
-                  youtubeEmbed: 'https://www.youtube.com/embed/IGInsosP0Ac?si=lZonJ9aDk5XywxH0',
+                  cover: '/albums/Zankyō Reference.jpg',
+                  title: 'C.h.a.o.s.m.y.t.h',
+                  youtubeEmbed: 'https://www.youtube.com/embed/5dreVgpgeKM',
                 },
                 {
                   cover: '/albums/Zeitakubyō.jpg',
