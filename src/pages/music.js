@@ -43,7 +43,6 @@ const Music = () => {
           <TOCItem><a href="#jpop">J-POP</a></TOCItem>
           <TOCItem><a href="#vocaloid">Vocaloid</a></TOCItem>
           <TOCItem><a href="#anime">Anime OP/ED & Game OST</a></TOCItem>
-          <TOCItem><a href="#jazz">Jazz Fusion</a></TOCItem>
         </TOCList>
       </TableOfContents>
       <SubHeading>
@@ -88,7 +87,7 @@ const Music = () => {
                   cover: '/albums/JinseiBoku.jpg',
                   title: 'The Beginning',
                   youtubeEmbed: 'https://www.youtube.com/embed/Hh9yZWeTmVM',
-                  
+
                 },
                 {
                   cover: '/albums/DETOX (Japanese Version).jpg',
@@ -447,10 +446,10 @@ const Music = () => {
 
           <ArtistCard>
             <ArtistName>
-              <StyledLink href='https://ensemble-stars.fandom.com/wiki/Eden'>Ensemble Stars!! - Eden</StyledLink>
+              <StyledLink href='https://ensemble-stars.fandom.com/wiki/Eden'>Ensemble Stars! - Eden</StyledLink>
             </ArtistName>
             <IntroText>
-              Eden is a 4-member Japanese unit of ENSEMBLE STARS!! under the agency <StyledLink href='https://ensemble-stars.fandom.com/wiki/COSMIC_PRODUCTION'>COSMIC PRODUCTION</StyledLink>.
+              Eden is a 4-member Japanese unit of ENSEMBLE STARS! under the agency <StyledLink href='https://ensemble-stars.fandom.com/wiki/COSMIC_PRODUCTION'>COSMIC PRODUCTION</StyledLink>.
               <br />The 4-members are <StyledLink href='https://ensemble-stars.fandom.com/wiki/Nagisa_Ran'>Nagisa Ran</StyledLink>, <StyledLink href='https://ensemble-stars.fandom.com/wiki/Hiyori_Tomoe'>Hiyori Tomoe</StyledLink>, <StyledLink href='https://ensemble-stars.fandom.com/wiki/Ibara_Saegusa'>Ibara Saegusa</StyledLink>, and <StyledLink href='https://ensemble-stars.fandom.com/wiki/Jun_Sazanami'>Jun Sazanami</StyledLink>.
               <br />
               Eden is a noble and vigorous unit led by Nagisa Ran. Eden members deliver heart-winning speeches during fan services, accompanied by opulent and dramatic performances.
@@ -510,10 +509,55 @@ const Music = () => {
           </ArtistCard>
 
           <ArtistCard>
+            <ArtistName>
+              <StyledLink href='https://ensemble-stars.fandom.com/wiki/Valkyrie'>Ensemble Stars! - Valkyrie</StyledLink>
+            </ArtistName>
+            <IntroText>
+              Valkyrie is a 2-member group from Ensemble Stars!. <br />
+              As a prestigious artistic unit led by <StyledLink href='https://ensemble-stars.fandom.com/wiki/Shu_Itsuki'>Shu Itsuki</StyledLink>, it's a unit that values artistic expression and creativity above all else. <br />
+              Another member is <StyledLink href='https://ensemble-stars.fandom.com/wiki/Mika_Kagehira'>Mika Kagehira</StyledLink>, he is one of my favourite characters in the game.<br />
+              <img src='/images/mika-cg1.webp' alt="mika"
+                style={{ maxWidth: '100%', height: 'auto' }} />
+              Their theme colour is wine red. Valkyrie is known for its <StyledLink href='https://en.wikipedia.org/wiki/Baroque_pop'>Baroque Pop/Rock</StyledLink> musical style, sometimes described as neoclassical dark wave or even chamber pop. <br />
+              Their music incorporates elements of classical music with a pop sensibility, often featuring theatrical and elaborate arrangements. <br />
+              Valkyrie is also affiliated with  <StyledLink href='https://ensemble-stars.fandom.com/wiki/COSMIC_PRODUCTION'>COSMIC PRODUCTION</StyledLink> (same as Eden).
+            </IntroText>
+            <MusicGallery
+              albums={[
+                {
+                  cover: '/albums/あんさんぶるスターズ!アルバムシリーズ Valkyrie.jpg',
+                  title: 'Miwaku Geki',
+                  youtubeEmbed: 'https://www.youtube.com/embed/3jMYNA47bvs'
+                },
+                {
+                  cover: '/albums/あんさんぶるスターズ!! ESアイドルソング season1 Valkyrie - Single.jpg',
+                  title: 'Eternal Weaving',
+                  youtubeEmbed: 'https://www.youtube.com/embed/u5LKdihgiLs',
+                },
+                {
+                  cover: '/albums/あんさんぶるスターズ!!アルバムシリーズ 『TRIP』 Valkyrie.jpg',
+                  title: "Le temps des fleurs",
+                  youtubeEmbed: 'https://www.youtube.com/embed/0xdUNS5_JF4'
+                },
+                {
+                  cover: '/albums/Valkyrie「迷宮電子回廊」あんさんぶるスターズ!! ESアイドルソング season3 - Single.jpg',
+                  title: 'Meikyuu Denshi Kairou',
+                  youtubeEmbed: 'https://www.youtube.com/embed/3KFmyGHm0js'
+                },
+                {
+                  cover: '/albums/あんさんぶるスターズ!! ESアイドルソング season5 Valkyrie「星の鳴動響きし時に」 - Single.jpg',
+                  title: 'Hoshi No Meidou Hibikishi Toki Ni',
+                  youtubeEmbed: 'https://www.youtube.com/embed/SREBxKqPe9w'
+                }
+              ]}
+            />
+          </ArtistCard>
+
+          <ArtistCard>
             <ArtistName><StyledLink href='https://persona.atlus.com/series/'>Persona</StyledLink> Music</ArtistName>
             <IntroText>
-              The Persona series is renowned not just for its captivating narratives and stylish visuals, but for its incredibly diverse and impactful musical scores. 
-              <br />Each installment offers a unique blend of genres, from the hip-hop and electronic undertones of Persona 3 to the upbeat J-Pop and jazz elements of Persona 4 Golden and the smooth acid jazz sound of Persona 5. 
+              The Persona series is renowned not just for its captivating narratives and stylish visuals, but for its incredibly diverse and impactful musical scores.
+              <br />Each installment offers a unique blend of genres, from the hip-hop and electronic undertones of Persona 3 to the upbeat J-Pop and jazz elements of Persona 4 Golden and the smooth acid jazz sound of Persona 5.
               <br />This dynamic range ensures that every game’s soundtrack is fresh and engaging, while always hitting the emotional mark perfectly.
               <br />Fantastic basslines, catchy melodies, and memorable lyrics are the hallmarks of Persona music.
             </IntroText>
@@ -550,56 +594,6 @@ const Music = () => {
         </div>
       </HeroSection>
 
-      <HeroSection>
-        <div id="jazz">
-          <GenreTitleBar>Jazz Fusion</GenreTitleBar>
-          <BodyText>
-            Jazz fusion is a refreshing blend of jazz improvisation with rock, funk, and R&B elements.
-          </BodyText>
-
-          <ArtistCard>
-            <ArtistName>Neighbors Complain</ArtistName>
-            <IntroText>Smooth and innovative.</IntroText>
-            <MusicGallery
-              albums={[
-                {
-                  cover: '/albums/neighbors_album.jpg',
-                  title: 'Smooth Vibes',
-                  audioSrc: '/audio/neighbors_smoothvibes.mp3',
-                },
-              ]}
-            />
-          </ArtistCard>
-
-          <ArtistCard>
-            <ArtistName>T-Square</ArtistName>
-            <IntroText>Legendary fusion group with memorable melodies.</IntroText>
-            <MusicGallery
-              albums={[
-                {
-                  cover: '/albums/tsquare_album.jpg',
-                  title: 'Mega Funk',
-                  audioSrc: '/audio/tsquare_megafunk.mp3',
-                },
-              ]}
-            />
-          </ArtistCard>
-
-          <ArtistCard>
-            <ArtistName>BLU-SWING</ArtistName>
-            <IntroText>Elegant and intricate.</IntroText>
-            <MusicGallery
-              albums={[
-                {
-                  cover: '/albums/blu_swing_album.jpg',
-                  title: 'Elegant Nights',
-                  audioSrc: '/audio/blu_swing_elegantnights.mp3',
-                },
-              ]}
-            />
-          </ArtistCard>
-        </div>
-      </HeroSection>
     </Layout>
   );
 };
