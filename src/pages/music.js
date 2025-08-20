@@ -525,14 +525,14 @@ const Music = () => {
             <MusicGallery
               albums={[
                 {
-                  cover: '/albums/あんさんぶるスターズ!アルバムシリーズ Valkyrie.jpg',
-                  title: 'Miwaku Geki',
-                  youtubeEmbed: 'https://www.youtube.com/embed/3jMYNA47bvs'
-                },
-                {
                   cover: '/albums/あんさんぶるスターズ!! ESアイドルソング season1 Valkyrie - Single.jpg',
                   title: 'Eternal Weaving',
                   youtubeEmbed: 'https://www.youtube.com/embed/u5LKdihgiLs',
+                },
+                {
+                  cover: '/albums/あんさんぶるスターズ!アルバムシリーズ Valkyrie.jpg',
+                  title: 'Miwaku Geki',
+                  spotifyEmbed: 'https://open.spotify.com/embed/track/4ywISXfEvj4M9yXP58vLIs?utm_source=generator',
                 },
                 {
                   cover: '/albums/あんさんぶるスターズ!!アルバムシリーズ 『TRIP』 Valkyrie.jpg',
